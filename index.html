@@ -16,7 +16,7 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap"
-        rel="stylesheet">/>
+        rel="stylesheet" />
     <!-- Our Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Open Mobile Script -->
@@ -24,11 +24,75 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header ">
+        <div class="container header-container">
+            <nav class="main-navigation">
+
+                <a class="logo link" href="./index.html"><i>SIMPLY</i>&nbsp;CHOCOLATE
+                    <svg class="logo-svg" width="21" height="21" aria-label="chocolate logotype">
+                        <use href="./images/icons.svg#icon-chocolate-paice"></use>
+                    </svg>
+                </a>
+                <ul class="nav-menu list">
+                    <li class="nav-item">
+                        <a class="link header-nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link header-nav-link" href="">How it’s made?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link header-nav-link" href="">Chocolate is loved</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-open-btn js-open-menu" type="button" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="mobile-menu-open-btn-icon" width="28" height="28" aria-label="open mobile menu icon">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <ul class="social-networks-menu list">
+                <li class="social-networks-item">
+                    <a class="link header-social-link" href="">
+                        <svg class="social-networks-svg" width="24" height="24" aria-label="icon facebook">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="social-networks-item">
+                    <a class="link header-social-link" href="">
+                        <svg class="social-networks-svg" width="24" height="24" aria-label="icon instagram ">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-networks-item">
+                    <a class="link header-social-link" href="">
+                        <svg class="social-networks-svg" width="24" height="24" aria-label="icon twitter ">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </header>
     <main>
-        <!-- ========section Hero========= -->
+        <!-- ========section HERO========= -->
+        <section class="hero-section container">
+            <h1 class="main-text">Treat yourself or a loved one to
+                our finest ingredients for a moment
+                of pure delight!
+            </h1>
+            <button class="hero-btn">Buy now</button>
+            <button class="hero-btn-two">How it’s made</button>
+            <p class="text-scroll">scroll down</p>
+            <svg class="hero-svg" width="22" height="22">
+                <use href="./images/icons.svg#icon-small-left"></use>
+            </svg>
+        </section>
+        <!-- ======== / section HERO========= -->
 
 
     </main>
@@ -37,6 +101,52 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
 
     </footer>
     <!-- ====Mobile-menu==== -->
+    <div class="mobile-menu-container js-menu-container">
+        <button class="mobile-menu-container-close-btn js-close-menu" type="button">
+            <svg class="mobile-menu-container-close-btn-icon" width="28" height="28"
+                aria-label="mobile menu close icon">
+                <use href="./images/icons.svg#icon-Icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu list">
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="">Home</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="">How it’s made?</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-link link" href="">Chocolate is loved</a>
+                </li>
+            </ul>
+
+        </nav>
+        <ul class="mobile-menu-social list">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">
+                    <svg class="mobile-svg-social" width="40" height="40">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">
+                    <svg class="mobile-svg-social" width="40" height="40">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">
+                    <svg class="mobile-svg-social" width="40" height="40">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ==== / Mobile-menu==== -->
 
 
 
