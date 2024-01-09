@@ -83,27 +83,37 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
     <main>
         <!-- ======== HERO SECTION========= -->
         <section class="hero-section container">
-            <h1 class="main-text">Treat yourself or a loved one to
-                our finest ingredients for a moment
-                of pure delight!
-            </h1>
-            <button class="hero-btn">Buy now</button>
-            <button class="hero-btn-two">How it’s made</button>
-            <a class="scroll-link link" href="">scroll down</a>
+            <div class="hero-main-text-container">
+                <h1 class="main-text">Treat yourself or a loved one to
+                    our finest ingredients for a moment
+                    of pure delight!
+                </h1>
+            </div>
 
-            <svg class="hero-svg" width="22" height="22">
-                <use href="./images/icons.svg#icon-small-left"></use>
-            </svg>
+            <div class="hero-btn-container">
+                <button class="hero-btn">Buy now</button>
+                <button class="hero-btn-two">How it’s made</button>
+            </div>
+
+            <a class="scroll-link link" href="">scroll down
+
+                <svg class="hero-svg" width="22" height="22">
+                    <use href="./images/icons.svg#icon-small-left"></use>
+                </svg>
+            </a>
         </section>
         <!-- ======== / HERO SECTION========= -->
         <!-- =====BENEFITS SECTION =========-->
         <section class="benefits-section">
             <div class="benefits-container container">
                 <ul class="benefits-menu list">
-                    <li class="benefits-item">
-                        <svg class="benefits-svg" width="32" height="32">
-                            <use href="./images/icons.svg#icon-chocolate"></use>
-                        </svg>
+                    <li class="benefits-item item-first">
+                        <div class="benefits-svg-container">
+                            <svg class="benefits-svg" width="32" height="32">
+                                <use href="./images/icons.svg#icon-chocolate"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="benefits-title">Unsurpassed taste</h3>
                         <p class="benefits-text">Crafted with the finest quality cocoa beans and a dedication to
                             perfection, each bite is a decadent experience that
@@ -113,9 +123,12 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                         </p>
                     </li>
                     <li class="benefits-item">
-                        <svg class="benefits-svg" width="32" height="32">
-                            <use href="./images/icons.svg#icon-coin"></use>
-                        </svg>
+                        <div class="benefits-svg-container">
+                            <svg class="benefits-svg" width="32" height="32">
+                                <use href="./images/icons.svg#icon-coin"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="benefits-title">Affordable price</h3>
                         <p class="benefits-text">Indulge in high-quality chocolate without breaking the bank with Simply
                             Chocolate's selection of affordable treats.
@@ -124,10 +137,13 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                             indulge in affordable luxury today.
                         </p>
                     </li>
-                    <li class="benefits-item">
-                        <svg class="benefits-svg" width="32" height="32">
-                            <use href="./images/icons.svg#icon-spoon"></use>
-                        </svg>
+                    <li class="benefits-item ">
+                        <div class="benefits-svg-container">
+                            <svg class="benefits-svg" width="32" height="32">
+                                <use href="./images/icons.svg#icon-spoon"></use>
+                            </svg>
+                        </div>
+
                         <h3 class="benefits-title">Own production</h3>
                         <p class="benefits-text">We take pride in our own production process, ensuring that every step
                             is carefully crafted to perfection. From selecting
@@ -141,53 +157,156 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
 
         <!-- ===== / BENEFITS SECTION ======-->
         <!-- ====INGRIDIENTS SECTION===== -->
-        <section>
+        <section class="ingredients-section container">
+            <h2 class="ingredients-title">
+                It all adds up to one exceptional <span class="accent-сolor">taste</span> sensation
+            </h2>
+            <div class="container">
+                <ul class="ingredients-menu list">
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/chocolate-milk-desk.png 1x, ./images/ingridiennts/chocolate-milk-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/chocolate-milk-mob.png 1x, ./images/ingridiennts/chocolate-milk-mob@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/chocolate-milk-mob.png"
+                                alt="milk chocolate" width="214" height="160" />
+                        </picture>
+
+                        <p class="ingredients-card-text">MILK CHOCOLATE</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source srcset="">
+                        </picture>
+                        <source
+                            srcset="./images/ingridiennts/milk-desk.png 1x, ./images/ingridiennts/milk-desk@2x.png 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./images/ingridiennts/milk-mob.png 1x, ./images/ingridiennts/milk-mob@2x.png 2x"
+                            media="(max-width: 767px)">
+                        <img class="img-ingredients" src="./images/ingridiennts/milk-mob.png" alt="milk" width="214"
+                            height="160" />
+                        <p class="ingredients-card-text">MILK</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/nuts-desk.png 1x, ./images/ingridiennts/nuts-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/nuts-mob.png 1x, ./images/ingridiennts/nuts-mob@2x.png 2x"
+                                media="()max-width: 767px">
+                            <img class="img-ingredients" src="./images/ingridiennts/nuts-mob.png" alt="nuts" width="214"
+                                height="160" />
+                        </picture>
+
+                        <p class="ingredients-card-text">NUTS</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/cofe-desk.png 1x, ./images/ingridiennts/cofe-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/cofe-mob.png 1x, ./images/ingridiennts/cofe-mob@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/cofe-mob.png" alt="" width="214"
+                                height="160" />
+                        </picture>
+
+                        <p class="ingredients-card-text">SEMI - SWEET CHOCOLATE</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/cacao-desk.png 1x, ./images/ingridiennts/cacao-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/cacao-tab.png 1x, ./images/ingridiennts/cacao-tab@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img src="./images/ingridiennts/cacao-tab.png" alt="cacao" width="214" height="160" />
+                        </picture>
+
+                        <p class="ingredients-card-text">CACAO</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/rasberry-desk.png 1x, ./images/ingridiennts/rasberry-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/rasberry-tab.png 1x, ./images/ingridiennts/rasberry-tab22x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/rasberry-tab.png" alt="raspberry"
+                                width="214" height="160" />
+                        </picture>
+
+                        <p class="ingredients-card-text">RASPBERRY</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/coconut-desk.png 1x, ./images/ingridiennts/coconut-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/coconut-tab.png 1x, ./images/ingridiennts/coconut-tab@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/coconut-tab.png" alt="coconut oil"
+                                width="214" height="160" />
+                        </picture>
+
+                        <p class="ingredients-card-text">COCONUT OIL</p>
+                    </li>
+                </ul>
+            </div>
 
         </section>
         <!-- ==== / INGRIDIENTS SECTION===== -->
         <!-- ====HOW IT'S MADE SECTION===== -->
-        <section class="container">
-            <h2>How it’s <span class="accent-сolor">made?</span></h2>
+        <section class="made-section container">
+            <h2 class="made-title">How it’s <span class="accent-сolor">made?</span></h2>
 
             <picture>
                 <source
                     srcset="./images/how-it's-made/made-chocolate-disctop.jpg 1x, ./images/how-it's-made/made-chocolate-disctop@2x.jpg 2x"
-                    media=" (min-width:1200px)" />
+                    media=" (min-width: 1200px)" />
                 <source
                     srcset="./images/how-it's-made/made-chocolate-tab.jpg 1x, ./images/how-it's-made/made-chocolate-tab@2x.jpg 2x"
-                    media=" (min-width:768px)" />
+                    media=" (min-width: 768px)" />
                 <source
                     srcset="./images/how-it's-made/made-chocolate-mob.jpg 1x, ./images/how-it's-made/made-chocolate-mob@2x.jpg 2x"
-                    media=" (max-width:767px)" />
-                <img src="./images/how-it's-made/made-chocolate-mob.jpg" alt="making chocolate">
+                    media=" (max-width: 767px)" />
+                <img class="made-img" src="./images/how-it's-made/made-chocolate-mob.jpg" alt="making chocolate">
             </picture>
-            <div class="">
-                <p>Try our chocolates today and discover the perfect balance of flavor</p>
-                <ol>
-                    <li>
-                        <p>
+            <div class="recipe-list">
+                <p class="made-section-subtitle">Try our chocolates today and discover the perfect balance of flavor</p>
+                <ol class="made-section-menu">
+                    <li class="made-section-item">
+                        <p class="made-section-text">
                             Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
                         </p>
                     </li>
-                    <li>
-                        <p>
+                    <li class="made-section-item">
+                        <p class="made-section-text">
                             At the same time, prepare a water bath. Melt the butter on it.
                         </p>
                     </li>
-                    <li>
-                        <p>
+                    <li class="made-section-item">
+                        <p class="made-section-text">
                             "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so
                             that the mass becomes
                             uniform and silky.
                         </p>
                     </li>
-                    <li>
-                        <p>
+                    <li class="made-section-item">
+                        <p class="made-section-text">
                             Heat the mixture over low heat, letting it barely boil.
                         </p>
                     </li>
-                    <li>
-                        <p>
+                    <li class="made-section-item">
+                        <p class="made-section-text">
                             Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool
                             and harden.
                         </p>
@@ -276,41 +395,41 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                             <picture>
                                 <source
                                     srcset="./images/top-sellers/nuts-desc.jpg 1x, ./images/top-sellers/nuts-desc@2x.jpg 2x"
-                                    media="(min-width:1200px)">
+                                    media="(min-width: 1200px)">
                                 <source
                                     srcset="./images/top-sellers/nuts-tab.jpg 1x, ./images/top-sellers/nuts-tab@2x.jpg 2x"
-                                    media="(min-width:768px)">
+                                    media="(min-width: 768px)">
                                 <source
                                     srcset="./images/top-sellers/nuts-mob.jpg 1x, ./images/top-sellers/nuts-mob@2x.jpg 2x"
-                                    media="(max-width:767px)">
+                                    media="(max-width: 767px)">
                                 <img src="./images/top-sellers/nuts-mob.jpg" alt="chocolate and hazelnuts">
                             </picture>
 
-                            <h2>CHOCOLATE WITH NUTS</h2>
+                            <h2 class="top-sellers-subtitle">CHOCOLATE WITH NUTS</h2>
                         </li>
                         <li class="top-sellers-item">
                             <picture>
                                 <source
                                     srcset="./images/top-sellers/fruits-desc.jpg 1x, ./images/top-sellers/fruits-desc@2x.jpg 2x"
-                                    media="(min-width:1200px)">
+                                    media="(min-width: 1200px)">
                                 <source
                                     srcset="./images/top-sellers/fruits-tab.jpg 1x, ./images/top-sellers/fruits-tab@2x.jpg 2x"
-                                    media="(min-width:768px)">
+                                    media="(min-width: 768px)">
 
                                 <img src="./images/top-sellers/fruits-tab.jpg" alt="Cchocolate with fruits">
                             </picture>
 
-                            <h2>CHOCOLATE WITH FRUITS</h2>
+                            <h2 class="top-sellers-subtitle">CHOCOLATE WITH FRUITS</h2>
                         </li>
                         <li class="top-sellers-item">
                             <picture>
                                 <source
                                     srcset="./images/top-sellers/dark-desc.jpg 1x, ./images/top-sellers/dark-desc@2x.jpg 2x"
-                                    media="min-width:1200px">
+                                    media="min-width: 1200px">
                                 <img src="./images/top-sellers/dark-desc.jpg" alt="chocolate dark">
                             </picture>
 
-                            <h2>DARK CHOCOLATE</h2>
+                            <h2 class="top-sellers-subtitle">DARK CHOCOLATE</h2>
                         </li>
                     </ul>
                 </div>
@@ -324,38 +443,46 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                 <div class="reviews-container">
                     <ul class="reviews-menu list">
                         <li class="reviews-item">
-                            <div class="reviews-card">
-                                <img srcset="./images/reviews/victoria@2x.png 2x" src="./images/reviews/victoria.png"
-                                    alt="girl's photo">
-                                <h3 class="reviews-card-name">Victoria Dobrzhanska</h3>
-                            </div>
-                            <p class="reviews-text">I love this chocolate bar. Perfect combination of light crispy
-                                wafer, covered in a thin layer chocolate.
+                            <div class="main-container-card">
+                                <div class="reviews-card">
+                                    <img class="reviews-img" srcset="./images/reviews/victoria@2x.png 2x"
+                                        src="./images/reviews/victoria.png" alt="girl's photo">
 
-                            </p>
+                                    <h3 class="reviews-card-name">Victoria Dobrzhanska</h3>
+                                </div>
+
+                                <p class="reviews-text">I love this chocolate bar. Perfect combination of light crispy
+                                    wafer, covered in a thin layer chocolate.
+
+                                </p>
+                            </div>
+
                         </li>
                         <li class="reviews-item">
-                            <div class="reviews-card">
-                                <img srcset="./images/reviews/nazar@2x.png 2x" src="./images/reviews/nazar.png"
-                                    alt="boy's photo">
-                                <h3 class="reviews-card-name">Nazar Babenko</h3>
+                            <div class="main-container-card">
+                                <div class="reviews-card">
+                                    <img class="reviews-img" srcset="./images/reviews/nazar@2x.png 2x"
+                                        src="./images/reviews/nazar.png" alt="boy's photo">
+                                    <h3 class="reviews-card-name">Nazar Babenko</h3>
+                                </div>
+                                <p class="reviews-text">This chocolate confection is a delight! A delight! The wafer is
+                                    light and crisp, the hazelnut cream is smooth, and the
+                                    chocolate is good.
+                                </p>
                             </div>
-                            <p class="reviews-text">This chocolate confection is a delight! A delight! The wafer is
-                                light and crisp, the hazelnut cream is smooth, and the
-                                chocolate is good.
-                            </p>
                         </li>
                         <li class="reviews-item">
-                            <div class="reviews-card">
-                                <img srcset="./images/reviews/olena@2x.png 2x" src="./images/reviews/olena.png"
-                                    alt="girl's photo">
-                                <h3 class="reviews-card-name">Olena Kampusch</h3>
+                            <div class="main-container-card">
+                                <div class="reviews-card">
+                                    <img class="reviews-img" srcset="./images/reviews/olena@2x.png 2x"
+                                        src="./images/reviews/olena.png" alt="girl's photo">
+                                    <h3 class="reviews-card-name">Olena Kampusch</h3>
+                                </div>
+                                <p class="reviews-text">Chocolate is a family favourite treat. Love the delicious smooth
+                                    chocolate and the creaminess inside. The wafer is soft
+                                    but crunchy.
+                                </p>
                             </div>
-                            <p class="reviews-text">Chocolate is a family favourite treat. Love the delicious smooth
-                                chocolate and the creaminess inside. The wafer is soft
-                                but crunchy.
-                            </p>
-
 
                         </li>
                     </ul>
@@ -403,10 +530,10 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                 <p>Contact us</p>
                 <ul class="footer-social-address-menu list">
                     <li class="footer-address-item">
-                        <a class="footer-address-link link" href=""></a>
+                        <a class="footer-address-link link" href="tel+380684439426">+380 (68) 443-94-26</a>
                     </li>
                     <li class="footer-address-item">
-                        <a class="footer-address-link link" href=""></a>
+                        <a class="footer-address-link link" href="simplychoc@gmail.com">simplychoc@gmail.com</a>
                     </li>
                 </ul>
             </address>
