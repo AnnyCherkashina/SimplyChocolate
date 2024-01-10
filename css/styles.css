@@ -80,27 +80,26 @@ body {
     color: #fd9222;
 }
 
-.hero-section {
-    min-height: 620px;
+.hero-main-text-container {
+    min-height: 100%;
     background-image: url("../images/hero/hero-mob.jpg");
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 0 20px;
     border-radius: 30px;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    hero-section {
+    hero-main-text-container {
         background-image: url("../images/hero/hero-mob@2x.jpg");
     }
 }
 
 @media screen and (min-width: 768px) {
-    hero-section {
+    hero-main-text-container {
         background-image: url("../images/hero/hero-tab.jpg");
     }
 
@@ -110,13 +109,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    hero-section {
+    hero-main-text-container {
         background-image: url("../images/hero/hero-mob@2x.jpg");
     }
 }
 
 @media screen and (min-width: 1200px) {
-    hero-section {
+    hero-main-text-container {
         background-image: url("../images/hero/hero-desc.jpg");
     }
 }
@@ -124,7 +123,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1280px),
 screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-    hero-section {
+    hero-main-text-container {
         background-image: url("../images/hero/hero-desc@2x.jpg");
     }
 }
@@ -251,15 +250,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 /* ==== / HEADER MOBILE===== */
 /* ======HERO SECTION===== */
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     margin-bottom: 80px;
 }
 
 .hero-main-text-container {
-    margin-bottom: 32px;
-    width: 270px;
+    padding: 395px 22px 20px 20px;
 }
 
 .main-text {
@@ -271,11 +266,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 }
 
 .hero-btn {
-    /* max-width: 120px; */
-    width: 120px;
+    min-width: 120px;
+    min-height: 41px;
     border: none;
     border-radius: 100px;
-    padding: 12px 28px;
+    padding-left: 28px;
+    padding-right: 28px;
     background: var(--orange);
     color: #FFF;
     font-size: 14px;
@@ -413,6 +409,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    padding-left: 26px;
+    padding-right: 26px;
     margin-bottom: 32px;
 }
 
@@ -425,7 +423,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 }
 
 .ingredients-card-item {
-    width: calc((100% - 57) / 4);
+    width: 100%;
     padding: 28px 32px;
 
 }
@@ -552,6 +550,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    padding: 32px 52px;
 }
 
 .our-products-subtitle {
@@ -628,6 +630,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 /* =======REVIEWS SECTION======= */
 .reviews-section {
     padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.reviews-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .reviews-title {
@@ -640,11 +650,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     margin-bottom: 74px;
 }
 
+.reviews-container {
+    margin-bottom: 32px;
+}
+
 .reviews-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
+
 }
 
 .reviews-img {
@@ -673,6 +687,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
 
 .main-container-card {
+    display: flex;
+    justify-content: center;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
@@ -688,11 +704,28 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
-    padding-right: 33px;
+
 }
 
 .reviews-item:nth-child(n+2) {
     display: none;
 }
 
+.reviews-btn {
+    color: #111;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: transparent;
+    padding: 12px 28px;
+}
+
 /* ======= / REVIEWS SECTION======= */
+/* =========FOOTER======== */
+.container-footer-one {
+    background: #1E1823;
+}
+
+/* ========= / FOOTER======== */
