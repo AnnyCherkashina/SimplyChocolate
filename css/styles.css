@@ -30,6 +30,10 @@ body {
 
 }
 
+address {
+    font-style: normal;
+}
+
 :root {
     --primary-text-color: #111;
     --secondary-text-color: #fafafa;
@@ -80,8 +84,7 @@ body {
     color: #fd9222;
 }
 
-.hero-main-text-container {
-    min-height: 100%;
+/* .hero-main-text-container {
     background-image: url("../images/hero/hero-mob.jpg");
     background-position: center top;
     background-size: contain;
@@ -126,7 +129,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     hero-main-text-container {
         background-image: url("../images/hero/hero-desc@2x.jpg");
     }
-}
+} */
 
 
 /* ====HEADER MOBILE===== */
@@ -251,10 +254,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 /* ======HERO SECTION===== */
 .hero-section {
     margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.hero-main-text-container {
+.hero-container {
+    background: rgba(17, 17, 17, 0.40);
+    border-radius: 30px;
     padding: 395px 22px 20px 20px;
+
 }
 
 .main-text {
@@ -265,13 +273,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     letter-spacing: -0.05em;
 }
 
+.hero-menu {
+    display: flex;
+    justify-content: center;
+}
+
 .hero-btn {
     min-width: 120px;
     min-height: 41px;
+    padding: 12px 28px;
     border: none;
     border-radius: 100px;
-    padding-left: 28px;
-    padding-right: 28px;
     background: var(--orange);
     color: #FFF;
     font-size: 14px;
@@ -288,8 +300,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 }
 
 .hero-btn-two {
-    /* max-width: 161px; */
-    width: 161px;
+    min-width: 159px;
+    min-height: 100%;
     border-radius: 100px;
     border: 1px solid #FFF;
     background-color: transparent;
@@ -304,11 +316,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 .hero-btn-two:hover {
     color: var(--orange);
     border: 1px solid var(--orange);
-}
-
-.hero-btn-container {
-    display: flex;
-    margin-bottom: 32px;
 }
 
 .scroll-link {
@@ -726,6 +733,116 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 /* =========FOOTER======== */
 .container-footer-one {
     background: #1E1823;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.main-container-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.footer-address {
+    order: 1;
+}
+
+.footer-menu-container {
+    order: 2;
+}
+
+/* Зберігаємо початковий порядок інших елементів */
+.footer-nav {
+    order: 3;
+}
+
+.input-container-footer {
+    order: 4;
+}
+
+.footer-subtitle {
+    width: 300px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+.footer-social-networks {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 14px;
+
+}
+
+.footer-social-item {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 8px 8px;
+}
+
+.footer-social-menu {
+    display: flex;
+    column-gap: 4px;
+}
+
+
+
+.footer-svg-social {
+    fill: var(--primary-bg-color);
+}
+
+.footer-social-address-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.footer-address-text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.footer-nav-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+
+
+.footer-address-link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+
+
+.footer-nav-link {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--orange);
+}
+
+.input-container-footer {
+    display: flex;
 }
 
 /* ========= / FOOTER======== */
