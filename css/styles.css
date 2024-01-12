@@ -263,10 +263,16 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     padding-bottom: 80px;
 }
 
+
 .hero-container {
-    padding: 395px 22px 20px 20px;
-    background: rgba(17, 17, 17, 0.40);
+    /* max-width: 100%; */
+    background-color: rgba(17, 17, 17, 0.40);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url(../images/hero/hero-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 30px;
+    padding: 395px 22px 20px 20px;
 }
 
 .main-text {
@@ -288,6 +294,37 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 .hero-menu {
     display: inline-flex;
     gap: 14px;
+}
+
+.hero-btn {
+    min-width: 120px;
+    height: 41px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    background: #FD9222;
+    border: none;
+
+}
+
+.hero-btn-two {
+    width: 159px;
+    min-height: 41px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background-color: transparent;
 }
 
 .scroll-link {
