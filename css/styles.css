@@ -34,6 +34,12 @@ address {
     font-style: normal;
 }
 
+button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
 :root {
     --primary-text-color: #111;
     --secondary-text-color: #fafafa;
@@ -58,6 +64,7 @@ address {
 .link {
     text-decoration: none;
 }
+
 
 
 .visually-hidden {
@@ -154,7 +161,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
 .logo-svg {
     margin-left: 4px;
-
+    fill: transparent;
 }
 
 .header-container {
@@ -253,101 +260,65 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 /* ==== / HEADER MOBILE===== */
 /* ======HERO SECTION===== */
 .hero-section {
-    margin-bottom: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 80px;
 }
 
 .hero-container {
+    padding: 395px 22px 20px 20px;
     background: rgba(17, 17, 17, 0.40);
     border-radius: 30px;
-    padding: 395px 22px 20px 20px;
-
 }
 
 .main-text {
+    width: 293px;
+    margin-bottom: 32px;
     color: #FFF;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .hero-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.hero-btn {
-    min-width: 120px;
-    min-height: 41px;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 100px;
-    background: var(--orange);
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-    margin-right: 14px;
-
-}
-
-.hero-btn:focus,
-.hero-btn:hover {
-    background: #FCF1E0;
-    color: var(--orange);
-}
-
-.hero-btn-two {
-    min-width: 159px;
-    min-height: 100%;
-    border-radius: 100px;
-    border: 1px solid #FFF;
-    background-color: transparent;
-    padding: 12px 28px;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.hero-btn-two:focus,
-.hero-btn-two:hover {
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    display: inline-flex;
+    gap: 14px;
 }
 
 .scroll-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    margin-bottom: 20px;
-}
+    gap: 14px;
 
-.scroll-link {
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: -0.03em;
+
+}
+
+.scroll-link:hover,
+.scroll-link:focus {
+    color: #fd9222;
 }
 
 .hero-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
     background-color: #fff;
     border-radius: 50%;
-    margin-left: 12px;
-    fill: var(--orange);
-}
 
-.hero-svg:focus,
-.hero-svg:hover {
-    background-color: var(--orange);
-    fill: #fafafa;
-}
-
-.scroll-link:focus,
-.scroll-link:hover {
-    color: var(--orange);
 }
 
 /* ====== / HERO SECTION===== */
@@ -751,7 +722,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     order: 2;
 }
 
-/* Зберігаємо початковий порядок інших елементів */
 .footer-nav {
     order: 3;
 }
@@ -843,6 +813,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
 .input-container-footer {
     display: flex;
+    align-items: center;
 }
 
 /* ========= / FOOTER======== */
