@@ -261,6 +261,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 /* ======HERO SECTION===== */
 .hero-section {
     padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -286,20 +288,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     letter-spacing: -0.03em;
 }
 
-.hero-wrapper {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.hero-menu {
-    display: inline-flex;
-    gap: 14px;
-}
 
 .hero-btn {
     min-width: 120px;
-    height: 41px;
+    min-height: 41px;
     padding-left: 28px;
     padding-right: 28px;
 
@@ -358,6 +350,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     border-radius: 50%;
 
 }
+
+
 
 /* ====== / HERO SECTION===== */
 /* =====BENEFITS SECTION===== */
@@ -787,9 +781,19 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 }
 
 .footer-social-item {
+
+    width: 40px;
+    height: 40px;
+
+}
+
+.footer-social-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    padding: 8px 8px;
 }
 
 .footer-social-menu {
