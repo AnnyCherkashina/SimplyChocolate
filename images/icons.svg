@@ -54,5 +54,11 @@
 <path fill="none" stroke="#fd9222" style="stroke: var(--color4, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6182" d="M20.651 23.521l-13.541-8.461M10.845 8.935l13.541 8.461M10.147 25.416l11.202-18.375M25.941 14.844c-2.902-1.813-4.041-3.23-2.174-6.293l-9.188-5.742-11.202 18.375 13.541 8.461 9.024-14.802z"></path>
 </symbol>
 
+
+<symbol id="icon-arrows-cards" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M9.143 16h13.714M22.857 16l-3.429-3.429M22.857 16l-3.429 3.429"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M16 30.857c8.205 0 14.857-6.652 14.857-14.857s-6.652-14.857-14.857-14.857c-8.205 0-14.857 6.652-14.857 14.857s6.652 14.857 14.857 14.857z"></path>
+</symbol>
+
 </defs>
 </svg>

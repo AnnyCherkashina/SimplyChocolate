@@ -1,26 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SIMPLY CHOCOLATE.Treat yourself or a loved one to 
-our finest ingredients for a moment 
-of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" />
+    our finest ingredients for a moment 
+    of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" />
     <title>Simply Chocolate</title>
-
-    <!-- Modern Normilize -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
-    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
         rel="stylesheet" />
-    <!-- Our Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -82,7 +77,7 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
     <main>
         <!--======== HERO SECTION=====-->
         <section class="hero-section">
-            <div class=" hero-container container">
+            <div class="container">
                 <h1 class="main-text">Treat yourself or a loved one&nbsp; to
                     our finest ingredients for a moment
                     of pure delight!
@@ -98,10 +93,11 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                     </ul>
 
                     <a class="scroll-link link" href="">scroll down
-
-                        <svg class="hero-svg" width="22" height="22">
-                            <use href="./images/icons.svg#icon-fi-rr-angle-small-left"></use>
-                        </svg>
+                        <span class="hero-link-box">
+                            <svg class="hero-svg" width="22" height="22">
+                                <use href="./images/icons.svg#icon-fi-rr-angle-small-left"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
 
@@ -111,6 +107,7 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
         <!-- =====BENEFITS SECTION =========-->
         <section class="benefits-section">
             <div class="benefits-container container">
+                <h2 class="benefits-title visually-hidden">Chocolate benefits</h2>
                 <ul class="benefits-menu list">
                     <li class="benefits-item item-first">
                         <div class="benefits-svg-container">
@@ -167,106 +164,126 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                 <h2 class="ingredients-title">
                     It all adds up to one exceptional <span class="accent-сolor">taste</span> sensation
                 </h2>
-                <div class="">
-                    <ul class="ingredients-menu list">
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/chocolate-milk-desk.png 1x, ./images/ingridiennts/chocolate-milk-desk@2x.png 2x"
-                                    media="(min-width: 1200px)" />
-                                <source
-                                    srcset="./images/ingridiennts/chocolate-milk-mob.png 1x, ./images/ingridiennts/chocolate-milk-mob@2x.png 2x"
-                                    media="(max-width: 767px)" />
-                                <img class="img-ingredients" src="./images/ingridiennts/chocolate-milk-mob.png"
-                                    alt="milk chocolate" width="214" height="160" />
-                            </picture>
+                <ul class="ingredients-menu list">
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/chocolate-milk-desk.png 1x, ./images/ingridiennts/chocolate-milk-desk@2x.png 2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images/ingridiennts/chocolate-milk-mob.png 1x, ./images/ingridiennts/chocolate-milk-mob@2x.png 2x"
+                                media="(max-width: 767px)" />
+                            <img class="img-ingredients" src="./images/ingridiennts/chocolate-milk-mob.png"
+                                alt="milk chocolate" width="214" height="160" />
+                        </picture>
 
-                            <p class="ingredients-card-text">MILK CHOCOLATE</p>
-                        </li>
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/milk-desk.png 1x, ./images/ingridiennts/milk-desk@2x.png 2x"
-                                    media="(min-width: 1200px)" />
-                                <source
-                                    srcset="./images/ingridiennts/milk-mob.png 1x, ./images/ingridiennts/milk-mob@2x.png 2x"
-                                    media="(max-width: 767px)" />
-                                <img class="img-ingredients" src="./images/ingridiennts/milk-mob.png" alt="milk"
-                                    width="214" height="160" />
-                            </picture>
-                            <p class="ingredients-card-text">MILK</p>
-                        </li>
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/nuts-desk.png 1x, ./images/ingridiennts/nuts-desk@2x.png 2x"
-                                    media="(min-width: 1200px)" />
-                                <source
-                                    srcset="./images/ingridiennts/nuts-mob.png 1x, ./images/ingridiennts/nuts-mob@2x.png 2x"
-                                    media="(max-width: 767px)" />
-                                <img class="img-ingredients" src="./images/ingridiennts/nuts-mob.png" alt="nuts"
-                                    width="214" height="160" />
-                            </picture>
+                        <p class="ingredients-card-text">MILK CHOCOLATE</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" heigt="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/milk-desk.png 1x, ./images/ingridiennts/milk-desk@2x.png 2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images/ingridiennts/milk-mob.png 1x, ./images/ingridiennts/milk-mob@2x.png 2x"
+                                media="(max-width: 767px)" />
+                            <img class="img-ingredients" src="./images/ingridiennts/milk-mob.png" alt="milk" width="214"
+                                height="160" />
+                        </picture>
+                        <p class="ingredients-card-text">MILK</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/nuts-desk.png 1x, ./images/ingridiennts/nuts-desk@2x.png 2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images/ingridiennts/nuts-mob.png 1x, ./images/ingridiennts/nuts-mob@2x.png 2x"
+                                media="(max-width: 767px)" />
+                            <img class="img-ingredients" src="./images/ingridiennts/nuts-mob.png" alt="nuts" width="214"
+                                height="160" />
+                        </picture>
 
-                            <p class="ingredients-card-text">NUTS</p>
-                        </li>
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/cofe-desk.png 1x, ./images/ingridiennts/cofe-desk@2x.png 2x"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/ingridiennts/cofe-mob.png 1x, ./images/ingridiennts/cofe-mob@2x.png 2x"
-                                    media="(max-width: 767px)">
-                                <img class="img-ingredients" src="./images/ingridiennts/cofe-mob.png" alt="" width="214"
-                                    height="160" />
-                            </picture>
+                        <p class="ingredients-card-text">NUTS</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/cofe-desk.png 1x, ./images/ingridiennts/cofe-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/cofe-mob.png 1x, ./images/ingridiennts/cofe-mob@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/cofe-mob.png" alt="" width="214"
+                                height="160" />
+                        </picture>
 
-                            <p class="ingredients-card-text">SEMI - SWEET CHOCOLATE</p>
-                        </li>
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/cacao-desk.png 1x, ./images/ingridiennts/cacao-desk@2x.png 2x"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/ingridiennts/cacao-tab.png 1x, ./images/ingridiennts/cacao-tab@2x.png 2x"
-                                    media="(min-width: 768px)">
-                                <img src="./images/ingridiennts/cacao-tab.png" alt="cacao" width="214" height="160" />
-                            </picture>
+                        <p class="ingredients-card-text">SEMI - SWEET CHOCOLATE</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/cacao-desk.png 1x, ./images/ingridiennts/cacao-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/cacao-tab.png 1x, ./images/ingridiennts/cacao-tab@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img src="./images/ingridiennts/cacao-tab.png" alt="cacao" width="214" height="160" />
+                        </picture>
 
-                            <p class="ingredients-card-text">CACAO</p>
-                        </li>
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/rasberry-desk.png 1x, ./images/ingridiennts/rasberry-desk@2x.png 2x"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/ingridiennts/rasberry-tab.png 1x, ./images/ingridiennts/rasberry-tab22x.png 2x"
-                                    media="(min-width: 768px)">
-                                <img class="img-ingredients" src="./images/ingridiennts/rasberry-tab.png"
-                                    alt="raspberry" width="214" height="160" />
-                            </picture>
+                        <p class="ingredients-card-text">CACAO</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/rasberry-desk.png 1x, ./images/ingridiennts/rasberry-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/rasberry-tab.png 1x, ./images/ingridiennts/rasberry-tab22x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/rasberry-tab.png" alt="raspberry"
+                                width="214" height="160" />
+                        </picture>
 
-                            <p class="ingredients-card-text">RASPBERRY</p>
-                        </li>
-                        <li class="ingredients-card-item">
-                            <picture>
-                                <source
-                                    srcset="./images/ingridiennts/coconut-desk.png 1x, ./images/ingridiennts/coconut-desk@2x.png 2x"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/ingridiennts/coconut-tab.png 1x, ./images/ingridiennts/coconut-tab@2x.png 2x"
-                                    media="(min-width: 768px)">
-                                <img class="img-ingredients" src="./images/ingridiennts/coconut-tab.png"
-                                    alt="coconut oil" width="214" height="160" />
-                            </picture>
+                        <p class="ingredients-card-text">RASPBERRY</p>
+                    </li>
+                    <li class="ingredients-card-item">
+                        <svg class="ingredients-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrows-cards"></use>
+                        </svg>
+                        <picture>
+                            <source
+                                srcset="./images/ingridiennts/coconut-desk.png 1x, ./images/ingridiennts/coconut-desk@2x.png 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/ingridiennts/coconut-tab.png 1x, ./images/ingridiennts/coconut-tab@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="img-ingredients" src="./images/ingridiennts/coconut-tab.png" alt="coconut oil"
+                                width="214" height="160" />
+                        </picture>
 
-                            <p class="ingredients-card-text">COCONUT OIL</p>
-                        </li>
-                    </ul>
-                </div>
+                        <p class="ingredients-card-text">COCONUT OIL</p>
+                    </li>
+                </ul>
+
             </div>
 
 
@@ -406,43 +423,67 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
                 <div class="top-sellers-card">
                     <ul class="top-sellers-menu list">
                         <li class="top-sellers-item">
-                            <picture>
-                                <source
-                                    srcset="./images/top-sellers/nuts-desc.jpg 1x, ./images/top-sellers/nuts-desc@2x.jpg 2x"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/top-sellers/nuts-tab.jpg 1x, ./images/top-sellers/nuts-tab@2x.jpg 2x"
-                                    media="(min-width: 768px)">
-                                <source
-                                    srcset="./images/top-sellers/nuts-mob.jpg 1x, ./images/top-sellers/nuts-mob@2x.jpg 2x"
-                                    media="(max-width: 767px)">
-                                <img src="./images/top-sellers/nuts-mob.jpg" alt="chocolate and hazelnuts">
-                            </picture>
+                            <div class="top-sellers-thumb">
+                                <picture>
+                                    <source
+                                        srcset="./images/top-sellers/nuts-desc.jpg 1x, ./images/top-sellers/nuts-desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/top-sellers/nuts-tab.jpg 1x, ./images/top-sellers/nuts-tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="./images/top-sellers/nuts-mob.jpg 1x, ./images/top-sellers/nuts-mob@2x.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <img class="top-sellers-img" src="./images/top-sellers/nuts-mob.jpg"
+                                        alt="chocolate and hazelnuts">
+                                </picture>
+                                <p class="overlay">
+                                    Chocolate with fruit is an unbeatable combination of two of the tastiest things in
+                                    the world. This dessert combines
+                                    delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry
+                                    of taste.
+                                </p>
+                            </div>
 
-                            <h2 class="top-sellers-subtitle">CHOCOLATE WITH NUTS</h2>
+
+                            <h3 class="top-sellers-subtitle">CHOCOLATE WITH NUTS</h3>
                         </li>
                         <li class="top-sellers-item">
-                            <picture>
-                                <source
-                                    srcset="./images/top-sellers/fruits-desc.jpg 1x, ./images/top-sellers/fruits-desc@2x.jpg 2x"
-                                    media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/top-sellers/fruits-tab.jpg 1x, ./images/top-sellers/fruits-tab@2x.jpg 2x"
-                                    media="(min-width: 768px)">
+                            <div class="top-sellers-thumb">
+                                <picture>
+                                    <source
+                                        srcset="./images/top-sellers/fruits-desc.jpg 1x, ./images/top-sellers/fruits-desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/top-sellers/fruits-tab.jpg 1x, ./images/top-sellers/fruits-tab@2x.jpg 2x"
+                                        media="(min-width: 768px)">
 
-                                <img src="./images/top-sellers/fruits-tab.jpg" alt="Cchocolate with fruits">
-                            </picture>
-
+                                    <img src="./images/top-sellers/fruits-tab.jpg" alt="Cchocolate with fruits">
+                                </picture>
+                                <p class="overlay">
+                                    Chocolate with fruit is an unbeatable combination of two of the tastiest things in
+                                    the world. This dessert combines
+                                    delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry
+                                    of taste.
+                                </p>
+                            </div>
                             <h2 class="top-sellers-subtitle">CHOCOLATE WITH FRUITS</h2>
                         </li>
                         <li class="top-sellers-item">
-                            <picture>
-                                <source
-                                    srcset="./images/top-sellers/dark-desc.jpg 1x, ./images/top-sellers/dark-desc@2x.jpg 2x"
-                                    media="(min-width: 1200px)">
-                                <img src="./images/top-sellers/dark-desc.jpg" alt="chocolate dark">
-                            </picture>
-
+                            <div class="top-sellers-thumb">
+                                <picture>
+                                    <source
+                                        srcset="./images/top-sellers/dark-desc.jpg 1x, ./images/top-sellers/dark-desc@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img src="./images/top-sellers/dark-desc.jpg" alt="chocolate dark">
+                                </picture>
+                                <p class="overlay">
+                                    Chocolate with fruit is an unbeatable combination of two of the tastiest things in
+                                    the world. This dessert combines
+                                    delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry
+                                    of taste.
+                                </p>
+                            </div>
                             <h2 class="top-sellers-subtitle">DARK CHOCOLATE</h2>
                         </li>
                     </ul>
@@ -627,7 +668,7 @@ of pure delight!Unsurpassed taste.Affordable price.Own production.Top sellers" /
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>t>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
