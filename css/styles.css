@@ -91,14 +91,7 @@ button {
     color: #fd9222;
 }
 
-.hero-container {
-    background-image: url("../images/hero/hero-mob.jpg");
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 0 20px;
-    border-radius: 30px;
-}
+
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -271,7 +264,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     padding: 395px 22px 20px 20px;
     border-radius: 30px;
     background-color: rgba(17, 17, 17, 0.40);
-    background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url(../images/hero/hero-mob.jpg);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url("../images/hero/hero-mob.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1043,12 +1036,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .hero-wrapper {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
     }
 
     .hero-menu {
         display: flex;
         gap: 14px;
+        margin-right: auto;
     }
 
     .hero-btn {
@@ -1094,6 +1089,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     }
 
     .scroll-link {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 8px;
         color: #fff;
         font-family: Montserrat;
         font-size: 14px;
@@ -1107,5 +1106,93 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
         color: #fd9222;
     }
 
+
     /* ===== / HERO==== */
+    /* =========BENEFITS SECTION====== */
+    .benefits-section {
+        padding: 50px 32px;
+        background: #1E1823;
+    }
+
+    .benefits-menu {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 88px;
+        row-gap: 44px;
+    }
+
+    .benefits-item {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 88px) / 2);
+    }
+
+    .benefits-svg-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.50);
+    }
+
+    .benefits-title {
+        margin-bottom: 18px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .benefits-text {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.02em;
+    }
+
+    /* ========= / BENEFITS SECTION====== */
+    /* =======INGRIDIENTS SECTION======= */
+    .ingredients-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 32px;
+    }
+
+    .ingredients-card-item:nth-last-child(-n+3) {
+        display: flex;
+    }
+
+    .ingredients-card-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    /* ======= / INGRIDIENTS SECTION======= */
+    /* =============HOW IT'S MADE SECTION======== */
+    .made-img {
+        margin: 0 auto;
+    }
+
+    .recipe-list {
+        width: 614px;
+        margin: 0 auto;
+        padding: 32px;
+        margin-top: 20px;
+    }
+
+    /* ============= / HOW IT'S MADE SECTION======== */
+    /* =======TOP SELLERS SECTION====== */
+    .top-sellers-item:nth-child(n+3) {
+        display: flex;
+    }
+
+    /* ======= / TOP SELLERS SECTION====== */
 }
