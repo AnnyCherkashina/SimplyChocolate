@@ -1190,9 +1190,18 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
     /* ============= / HOW IT'S MADE SECTION======== */
     /* =======TOP SELLERS SECTION====== */
-    .top-sellers-item:nth-child(n+3) {
-        display: flex;
-    }
+
 
     /* ======= / TOP SELLERS SECTION====== */
+
+
+    /* =========REVIEWS SECTION====== */
+    .reviews-item:nth-child(n+3) {
+        display: block;
+    }
+
+
+
+    /* ========= / REVIEWS SECTION======*/
+
 }
