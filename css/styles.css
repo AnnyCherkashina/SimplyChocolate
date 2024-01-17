@@ -1190,18 +1190,128 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
     /* ============= / HOW IT'S MADE SECTION======== */
     /* =======TOP SELLERS SECTION====== */
+    .top-sellers-item:nth-child(n+2) {
+        display: block;
+    }
 
+    .top-sellers-item:nth-child(n+3) {
+        display: none;
+    }
+
+    .top-sellers-menu {
+        justify-content: center;
+    }
 
     /* ======= / TOP SELLERS SECTION====== */
 
 
     /* =========REVIEWS SECTION====== */
-    .reviews-item:nth-child(n+3) {
+    .reviews-item:nth-child(n+2) {
         display: block;
+    }
+
+    .reviews-item:nth-child(n+3) {
+        display: none;
+    }
+
+    .reviews-menu {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .reviews-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    .reviews-btn {
+        min-width: 222px;
+        padding: 14px 40px;
+        border-radius: 100px;
+        border: 1px solid #FD9222;
+        transition: color 300ms linear;
+    }
+
+    .reviews-btn:hover,
+    .reviews-btn:focus {
+
+        color: var(--primary-bg-color);
+        background: #FD9222;
+    }
+
+    /* ========= / REVIEWS SECTION======*/
+    .main-container-footer {
+        display: flex;
+
+    }
+
+    .footer-social-menu {
+        order: 1;
+    }
+
+    .footer-address {
+        order: 2;
+    }
+
+    .footer-subtitle {
+        margin-right: 52px;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+    }
+
+    .footer-desctop-ferst {
+        display: flex;
+    }
+
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        border: 1px solid rgba(253, 146, 34, 0.10);
+    }
+
+
+    .footer-social-link:hover .footer-svg-social,
+    .footer-social-link:focus .footer-svg-social {
+        fill: var(--orange);
     }
 
 
 
-    /* ========= / REVIEWS SECTION======*/
+    .footer-menu-container {
+        margin-right: 40px;
+    }
 
+    .footer-desctop-even {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-nav-menu {
+        flex-direction: row;
+        gap: 16px;
+        margin-right: 32px;
+    }
+
+    .footer-nav-item:hover,
+    .footer-nav-item:focus {
+        color: var(--orange);
+    }
+
+    .underline {
+        text-decoration: underline;
+        width: 704px;
+        height: 1.5px;
+        background: rgba(255, 255, 255, 0.10);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1168px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
 }
