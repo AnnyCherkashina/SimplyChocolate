@@ -980,7 +980,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
     .social-networks-menu {
         display: flex;
-        gap: 4px;
+        gap: 14px;
     }
 
     .social-networks-item {
@@ -1112,6 +1112,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .benefits-section {
         padding: 50px 32px;
         background: #1E1823;
+    }
+
+    .benefits-underline {
+        display: none;
     }
 
     .benefits-menu {
@@ -1308,10 +1312,138 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     }
 }
 
+/* ======== / TABLET====== */
+/*    ======DESCTOP===== */
+
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1168px;
         margin: 0 auto;
         padding: 0 16px;
     }
+
+    /*  =====HEADER-DESCTOP====== */
+    .main-navigation {
+        margin-right: 90px;
+    }
+
+    .nav-menu {
+        gap: 24px;
+    }
+
+    /*  ===== / HEADER-DESCTOP====== */
+    /* ========HERO SECTION===== */
+    .hero-container {
+        padding: 381px 40px 40px 40px;
+        background-color: rgba(17, 17, 17, 0.40);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url("../images/hero/hero-desc.jpg");
+    }
+
+    .hero-section {
+        padding-bottom: 80px;
+    }
+
+    /* ======== / HERO SECTION===== */
+    /* =======BENEFITS SECTION====== */
+    .benefits-menu {
+        flex-wrap: nowrap;
+    }
+
+    .benefits-item {
+        min-width: 308px;
+    }
+
+
+    .benefits-underline {
+
+        margin: 113px 0;
+        width: 1px;
+        height: 124px;
+        background: rgba(255, 255, 255, 0.50);
+    }
+
+    /* ======= / BENEFITS SECTION====== */
+    /* ======= INGRIDIENTS SECTION=====*/
+
+    .ingredients-card-item {
+        width: calc((100% - 96px) / 4);
+    }
+
+    .ingredients-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 19px;
+        justify-content: flex-start;
+
+    }
+
+    .ingredients-card-item {
+        padding: 28px 32px;
+
+    }
+
+
+
+    .img-ingredients {
+        margin-bottom: 16px;
+    }
+
+    /* =======  / INGRIDIENTS SECTION=====*/
+    /* ==========HOW IT'S MADE SECTION===== */
+    .made-title {
+        margin-bottom: 50px;
+    }
+
+    .made-section-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .recipe-list {
+        margin-top: 0;
+    }
+
+    /* ========== / HOW IT'S MADE SECTION===== */
+
+    /* =======OUR PRODUCTS SECTION===== */
+    .our-products-menu {
+        justify-content: flex-start;
+    }
+
+    /* ======= / OUR PRODUCTS SECTION===== */
+
+    /* =====TOP SELLERS SECTION====== */
+
+    .top-sellers-item:nth-child(n+3) {
+        display: block;
+    }
+
+    /* ===== / TOP SELLERS SECTION====== */
+    /* =========REVIEWS SECTION======== */
+    .reviews-item:nth-child(n+3) {
+        display: block;
+    }
+
+    /* ========= / REVIEWS SECTION======== */
+    /* ======FOOTER DESCTOP==== */
+    .footer-menu-container {
+
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .underline {
+        width: 1136px;
+    }
+
+    .footer-nav-menu {
+        margin-right: 0;
+        gap: 24px;
+    }
+
+    .input-container-footer {
+        margin-left: auto;
+    }
+
+    /* ====== / FOOTER DESCTOP==== */
 }
